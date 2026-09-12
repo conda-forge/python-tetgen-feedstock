@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: python-tetgen
   pypi_name: tetgen
-  version: "0.8.2"
+  version: "0.8.4"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ pypi_name[0] }}/${{ pypi_name }}/${{ pypi_name }}-${{ version }}.tar.gz
-  sha256: 06ca8d8b9e21cdbb75334e20ee77e788e88f4b2cdb85c51b008592cb3f9af964
+  sha256: b6ca979ccecf43ddc0d31fa4f5a05da3cfeb4ab0705b8128530745bbab38bb86
 
 build:
   number: 0
