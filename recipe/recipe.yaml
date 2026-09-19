@@ -14,13 +14,12 @@ source:
   sha256: b6ca979ccecf43ddc0d31fa4f5a05da3cfeb4ab0705b8128530745bbab38bb86
 
 build:
-  number: 0
+  number: 1
   script:
     - if: not win
       then:
         - export CMAKE_GENERATOR=Ninja
-    - if: win
-      then:
+      else:
         - set CMAKE_GENERATOR=Ninja
         - set CMAKE_GENERATOR_PLATFORM=
         - set CMAKE_GENERATOR_TOOLSET=
