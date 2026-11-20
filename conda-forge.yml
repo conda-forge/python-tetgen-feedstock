@@ -8,4 +8,4 @@ conda_forge_output_validation: true
 bot:
   automerge: true
 provider:
-  osx_arm: default
+  osx_arm64: default
